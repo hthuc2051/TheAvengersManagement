@@ -1,0 +1,363 @@
+body{
+    margin: 0px;
+    background-image: url(../images/New-York-Wallpaper-Background-7.jpg);
+    background-size: cover;
+    font-family: machineFont;
+}
+input:focus{
+    outline-width: 0;
+}
+textarea:focus{
+    outline-width: 0;
+}
+body::-webkit-scrollbar { 
+    display: none;  
+}
+#dateStatus{
+    display: none;
+    color: white;
+    position: relative;
+    top: -383px;
+    left: 370px;
+    color: #FFFF66;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 15px;
+    margin-top: 5px;
+}
+@font-face {
+    font-family: machineFont;
+    src: url(../font/Maximize.otf);
+}
+.form-title{
+    width: 500px;
+    height: 25px;
+    font-size: 40px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: white;
+    position: absolute;
+    top: 0px;
+    margin-left: 50px;
+}
+.but{
+    position: absolute;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.14);
+    font-family: machineFont;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    padding-left: 7px;
+}
+#but-Details{
+    left: 660px;
+    bottom: 102px;
+    padding: 2px 13px 2px 13px;
+}
+.miniform-submit{
+    margin-top: 15px;
+    width: 70px;
+    height: 20px;
+    font-size: 10px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.14);
+    font-family: machineFont;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    float: right;
+    margin-right: 10px;	
+    padding-top: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.form-list{
+    width:150px;
+    height: 16px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: #F5F5F5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 5px;
+    padding-left: 5px;
+    transition: all 0.5s;
+    padding-bottom: 5px;
+}
+.miniform-submit:hover{
+    background: #CCCCCC;
+    color: black
+}
+.overlay {
+    height: 25%;
+    width: 27%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 63%;
+    right: 18%;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    z-index: 999;
+}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+.overlay span{
+    color: white;
+}
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+
+}
+
+.checkbox-list::-webkit-scrollbar {
+    width: 1px;	
+    height: 0px;
+}
+.checkbox-list::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid white;
+}
+.checkbox-list{
+    width: 350px;
+    height: 100px;
+    background: none;
+    margin-top: -20px;
+    color: white;
+    font-family: machineFont;
+    font-size: 14px;
+    overflow: scroll;
+    margin-bottom: -10px;
+    text-align: left;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    padding-left: 10px;
+}
+.checkbox-list input{
+    position: relative;
+    top:5px;
+}
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.but:hover{
+    background: #CCCCCC;
+    color: black
+}
+.but:first-child{
+    margin-right: 20px;
+}
+#form-mission{
+    color: white;
+    width: 100%;
+    height: 635px;
+    box-sizing: border-box;
+    padding-top: 80px;
+    padding-left: 250px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.85);
+}
+.form-attribute{
+    width: 500px;
+    height: 25px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 10px;
+    padding-left: 10px;
+    transition: all 0.5s;
+    margin-top: 15px;
+
+}
+.form-attribute:nth-child(5){
+    width: 547px;
+}
+.form-attribute:nth-child(7){
+    width: 567px;
+}
+.form-attribute:nth-child(9){
+    width:170px;
+    margin-right: 80px;
+}
+.form-attribute:nth-child(10){
+    width:170px;
+
+}
+.date{
+    width:225px;
+    height: 16px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: #F5F5F5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    transition: all 0.5s;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-clear-button {
+    display:none;
+}
+
+input::-webkit-calendar-picker-indicator {
+    color: white;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+input::-webkit-calendar-picker-indicator:hover {
+    color:black;
+    cursor: pointer;
+}
+
+
+.description::-webkit-scrollbar {
+    width: 2px;	
+    height: 0px;
+}
+.description::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid white;
+}
+.description{
+    width: 650px;
+    height: 70px;
+    background: none;
+    color: white;
+    font-family: machineFont;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    overflow: scroll;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+
+#user-list::-webkit-scrollbar {
+    width: 2px;	
+    height: 0px;
+}
+#user-list::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid white;
+}
+#user-list{
+    width: 400px;
+    height: 100px;
+    background: none;
+    color: white;
+    font-family: machineFont;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    overflow: scroll;
+    margin-bottom: -10px;
+    text-align: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.file {
+    position: relative;
+    margin-left: -350px;
+}
+.file label {
+    background: rgba(255, 255, 255, 0.14);
+    padding: 5px 20px;
+    color: white;
+    font-size: 16px;
+    transition: all .4s;
+}
+.file input {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    opacity: 0.01;
+
+}
+.file input:hover + label,
+.file input:focus + label {
+    background: #CCCCCC;
+    color: black;
+}
+.form-submit{
+    position: absolute;
+    margin-left: 770px;
+    margin-top: -180px;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.14);
+    font-family: machineFont;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+}
+input:focus{
+    border-bottom: 1px solid white;
+}
+.form-submit:hover{
+    background: #CCCCCC;
+    color: black
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #DCDCDC;
+    font-size: 15px;
+}
+#line1{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    position: absolute;
+    top: 40px;
+    color: rgba(0,0,0,0.85);
+}
+#line2{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    position: absolute;
+    left: -550px;
+    color: rgba(0,0,0,0.85);
+    float: left;
+    transform: rotate(90deg);
+    transform: skewX(20px);
+    top: -70px;
+}.error{
+    color: #FFFF66;
+}

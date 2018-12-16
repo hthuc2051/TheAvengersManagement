@@ -1,0 +1,266 @@
+
+.arrow-btn {
+	color: #7a7a7a;
+	font-size: 20px;
+}
+
+.arrow-btn i {
+	display: inline-block;
+}
+
+.arrow-btn:hover {
+	color: #7a7a7a;
+}
+
+
+
+/*---------------------
+	Hero section
+-----------------------*/
+.hero-slider {
+	position: relative;
+	height: 645px;
+	overflow: hidden;
+}
+
+.hero-slider .owl-nav:hover{
+	opacity: 1;
+}
+
+.hero-slider .owl-nav i {
+	margin-left: 2px;
+}
+
+.hero-slider .owl-nav .owl-prev {
+	display: none;
+}
+
+.hero-slider .owl-dots {
+	position: absolute;
+	left: 150px;
+	bottom: 20px;
+}
+
+.hero-slider .owl-dots .owl-dot {
+	display: inline-block;
+	margin-right: 30px;
+	color: #fff;
+	font-size: 14px;
+	padding-bottom: 40px;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-slider .owl-dots .owl-dot.active span {
+	color: #cc1847;
+}
+
+.hero-slider .owl-dots .owl-dot.active:after {
+	height: 100%;
+}
+
+.hero-slider .owl-dots .owl-dot:after {
+	position: absolute;
+	content: '';
+	width: 2px;
+	height: 0;
+	left: 50%;
+	top: 30px;
+	margin-left: -2px;
+	background: #fff;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.hs-item {
+	min-height: 950px;
+	position: relative;
+	display: table;
+	width: 100%;
+}
+
+.hs-item:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #000;
+	opacity: 0.7;
+}
+
+.hs-item .hs-text {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	z-index: 2;
+}
+
+.hs-item .hs-title {
+	color: #fff;
+	font-size: 100px;
+	font-weight: 300;
+	margin-bottom: 120px;
+	position: relative;
+	left: 150px;
+	opacity: 0;
+}
+
+.hs-item .hs-des {
+	color: #fff;
+	font-size: 20px;
+	position: relative;
+	left: 150px;
+	opacity: 0;
+	top: -110px;
+}
+
+.owl-item.active .hs-item .hs-title,
+.owl-item.active .hs-item .hs-des {
+	left: 10px;
+	opacity: 0.7;
+}
+
+.owl-item.active .hs-item .hs-title {
+	-webkit-transition: all 0.5s ease 0.6s;
+	-o-transition: all 0.5s ease 0.6s;
+	transition: all 0.5s ease 0.6s;
+}
+
+.owl-item.active .hs-item .hs-des {
+	-webkit-transition: all 0.5s ease 0.8s;
+	-o-transition: all 0.5s ease 0.8s;
+	transition: all 0.5s ease 0.8s;
+}
+
+@media only screen and (max-width: 1650px) {
+	.sp-pad {
+		padding-left: 90px;
+		padding-right: 90px;
+	}
+	.hero-slider .owl-dots {
+		left: 90px;
+	}
+	.contact-text,
+	.services-text {
+		left: 80px;
+	}
+}
+
+@media only screen and (max-width: 1510px) {
+	.sp-pad {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.breadcrumb-area,
+	.hero-slider .owl-dots {
+		left: 30px;
+	}
+	.contact-text,
+	.services-text {
+		left: 30px;
+		width: 350px;
+	}
+	.service-more-link {
+		right: 30px;
+	}
+	.progress-section .circle-progress:after {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+	.hs-item {
+		min-height: 750px;
+	}
+	.single-portfolio {
+		height: 400px;
+	}
+	.portfolio-info {
+		width: calc(100% - 40px);
+		height: calc(100% - 40px);
+		left: 20px;
+		top: 20px;
+		padding-top: 165px;
+	}
+}
+
+/* Tablet :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.main-menu ul li a {
+		padding: 10px;
+		margin-right: 5px;
+	}
+	.hero-slider .owl-nav {
+		right: 50px;
+	}
+	.hs-item {
+		min-height: 650px;
+	}
+	.hs-item .hs-title {
+		font-size: 100px;
+		margin-bottom: 20px;
+	}
+	.hs-item .hs-des {
+		font-size: 40px;
+	}
+}
+/* Large Mobile :480px. */
+@media only screen and (max-width: 767px) {
+	
+	.hero-slider .owl-nav {
+		right: 50px;
+	}
+	.hs-item {
+		min-height: 470px;
+	}
+	.hs-item .hs-title {
+		font-size: 80px;
+		margin-bottom: 20px;
+	}
+	.hs-item .hs-des {
+		font-size: 30px;
+	}
+	.sp-pad {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.sp-title {
+		font-size: 26px;
+	}
+	
+}
+
+/* small Mobile :320px. */
+@media only screen and (max-width: 479px) {
+	.hero-slider .owl-nav {
+		right: 20px;
+	}
+	.hs-item .hs-title {
+		font-size: 50px;
+		margin-bottom: 20px;
+	}
+	.hs-item .hs-des {
+		font-size: 18px;
+	}
+	.sp-pad {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.worknav .wn-thumb {
+		width: 70px;
+		height: 70px;
+	}
+	.worknav .wn-info h3 {
+		font-size: 16px;
+	}
+	.work-info-list li {
+		width: 100%;
+	}
+	.footer-section h2 {
+		font-size: 33px;
+	}
+}

@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: machineFont;
+    src: url(font/Maximize.otf);
+}
+input:focus{
+	outline-width: 0;
+}
+#container-login{
+	margin-top: 100px;
+	margin-left: 50px;
+	width: 100%;
+	height: 500px;
+	align-content: center;
+	z-index: 0;
+	float: left;
+}
+#container-intro{
+	width: 450px;
+	height: 400px;
+	float: left;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 1px;
+	margin-right: 0px;
+	color: white;
+}
+#container-intro ul{
+	list-style-type: none;
+}
+#quotes {
+	width: 400px;
+	height: 100px;
+	font-size: 20px;
+	margin-top: 150px;
+	text-align: left;
+}
+#author{
+	width: 250px;
+	float: right;
+	font-size: 22px;
+	margin-top: 20px;
+	margin-right: 40px;
+	text-align: center;
+}
+#login-form{
+	float: left;
+	width: 600px;
+	height: 400px;
+	background-color: rgba(0,0,0,0.8);
+	box-sizing: border-box;
+	padding-top: 80px;
+	text-align: left;
+	font-size: 20px;
+	color: white;
+	border-radius: 1px;
+}
+
+.form-attribute{
+	width: 400px;
+	height: 25px;
+	margin-top: 30px;
+	font-size: 18px;
+	font-family: machineFont;
+	background-color: rgba(0,0,0,0.0);
+	border: none;
+	color: white;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+	margin-left: 50px;
+	padding-left: 10px;
+	transition: all 0.5s;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  	color: #DCDCDC;
+	font-size: 15px;
+}
+.form-attribute:focus{
+	border-bottom: 1px solid white;
+}
+.form-Username{
+	width: 165px;
+	height: 25px;
+	margin-top: 30px;
+	font-size: 18px;
+	font-family: machineFont;
+	background-color: rgba(0,0,0,0.0);
+	border: none;
+	color: white;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+	margin-left: 50px;
+	padding-left: 10px;
+}
+::-webkit-input-placeholder { 
+  	color: #DCDCDC;
+	font-size: 15px;
+}
+.form-Username:focus{
+	border-bottom: 1px solid white;
+}
+.form-submit{
+	margin-top: 50px;
+	margin-left: 50px;
+	width: 100px;
+	height: 30px;
+	font-size: 15px;
+	color: white;
+	background: rgba(255, 255, 255, 0.14);
+	font-family: machineFont;
+	cursor: pointer;
+	border: none;
+}
+
+
+.form-submit:hover,
+.form-submit:focus{
+  background: #CCCCCC;
+  color: black;
+}
+
+
+
+#sign-up{
+	color: #DCDCDC;
+	float: left;
+	width: 400px;
+	height: 30px;
+	position: relative;
+	margin-left: 550px;
+	margin-top: -50px;
+}
+#sign-up a{
+	text-decoration: none;
+	color: #CD853F;
+	font-size: 20px;
+	cursor: pointer;
+}
+#sign-up a:hover{
+	text-decoration: underline;
+}
+
+#msg-2{
+	width: 1100px;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	color: white;
+	text-shadow: 1px 1px 5px black;
+}
+
+
+/*sign up*/
+.form-title{
+	font-size: 30px;
+	position: relative;
+	text-align: center;
+	margin-top: -70px;
+	text-decoration: underline;
+	margin-bottom: 40px;
+	text-shadow: 0px 0px 20px #DCDCDC;
+}
+#container-register{
+	margin-top: 100px;
+	margin-left: 150px;
+	width: 100%;
+	height: 500px;
+	align-content: center;
+	z-index: 0;
+	float: left;
+}
+#register-form{
+	float: left;
+	width: 600px;
+	height: 400px;
+	background-color: rgba(0,0,0,0.85);
+	box-sizing: border-box;
+	padding-top: 80px;
+	text-align: left;
+	font-size: 20px;
+	color: white;
+	border-radius: 1px;
+}
+#register-form input{
+	padding-top: -40px;
+	margin-top: 20px;
+}
+#register-img{
+	width: 200px;
+	height: 400px;
+	float: left;
+	opacity: 0.7;
+	background-image: url(images/TeamRed.jpeg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 1px;
+	margin-right: 0px;
+	color: white;
+}
+
+/*heroes*/
+
+#title{
+	width: 99%;
+	height: 50px;
+	font-size: 40px;
+	margin-bottom: -50px;
+	color: white;
+	text-shadow: 0px 0px 10px #DCDCDC;
+}
+#container-heroes{
+	width: 96%;
+	height: 100%;
+	list-style-type: none;
+	overflow: scroll;
+}
+#container-heroes li{
+	width: 200px; height: 300px;
+	background-size: cover;
+	margin-left: 60px;
+	margin-top: 180px;
+	border: 1px solid yellow;
+	opacity: 0.9;
+}
+
+#container-heroes::-webkit-scrollbar {
+    width: 2px;	
+}
+#container-heroes::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid white;
+}
+ 

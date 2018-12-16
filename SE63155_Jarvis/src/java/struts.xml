@@ -1,0 +1,150 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <constant name="struts.devMode" value="true" />
+    <package name="default" extends="struts-default">
+        <action name="" class="thucnh.beans.WelcomeAction">
+            <result name="home" >/folHome/HomePage.jsp</result>       
+        </action>
+        <action name="LoginAction" class="thucnh.beans.LoginAction">
+            <result name="admin">/folAdmin/AdminPage.jsp</result>
+            <result name="user">/folUser/UserPage.jsp</result>
+            <result name="invalid">/folHome/HomePage.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="LoadDataAction" class="thucnh.beans.LoadDataAction">
+            <result name="admin">/folAdmin/AdminPage.jsp</result>
+            <result name="user" type="redirectAction" >
+                <param name="actionName" >LoginAction</param>
+            </result>
+            <result name="armorUser">/folArmor/ArmorPage.jsp</result>
+            <result name="error" >/error.jsp</result>
+        </action>
+        <action name="ViewAction" class="thucnh.beans.ViewAction">
+            <result name="user">/viewDetails/user_detailsPage.jsp</result>
+            <result name="armor">/viewDetails/armor_detailsPage.jsp</result>
+            <result name="mission">/viewDetails/mission_detailsPage.jsp</result>
+            <result name="armorUser">/folArmor/ArmorDetailsPage.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="UpdateUserAction" class="thucnh.beans.UpdateUserAction" >
+            <result name="admin" type="redirectAction">
+                <param name="actionName">SearchAction</param>
+                <param name="key">user</param>
+                <param name="alert">${alert}</param>
+                <param name="searchValue">${firstName}</param>
+            </result>
+            <result name="user" type="redirectAction">
+                <param name="actionName">LoginAction</param>
+                <param name="alert">${alert}</param>
+            </result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="UpdateMissionAction" class="thucnh.beans.UpdateMissionAction">
+            <result name="admin" type="redirectAction">
+                <param name="actionName" >SearchAction</param>
+                <param name="key" >mission</param>
+                <param name="alert">${alert}</param>
+                <param name="searchValue" >${missionTitle}</param>
+            </result>
+            <result name="error">/error.jsp</result>
+            <result name="user" type="redirectAction">
+                <param name="alert">${alert}</param>
+                <param name="actionName">LoginAction</param>
+            </result>
+        </action>
+        <action name="UpdateArmorAction" class="thucnh.beans.UpdateArmorAction">
+            <result name="admin" type="redirectAction">
+                <param name="actionName" >SearchAction</param>
+                <param name="key" >armor</param>
+                <param name="alert">${alert}</param>
+                <param name="searchValue" >${armorName}</param>
+            </result>
+            <result name="error" >/error.jsp</result>
+        </action>
+        <action name="InsertArmorAction" class="thucnh.beans.InsertArmorAction">
+            <result name="admin" type="redirectAction">
+                <param name="actionName">LoadDataAction</param>
+                <param name="key">armor</param>
+                <param name="alert">${alert}</param>
+            </result>
+            <result name="error" >error.jsp</result>
+            <result name="duplicate">/folAdmin/insert_armorPage.jsp</result>
+        </action>
+        <action name="InsertUserAction" class="thucnh.beans.InsertUserAction">
+            <result name="admin" type="redirectAction" >
+                <param name="actionName" >LoadDataAction</param>
+                <param name="key">user</param>
+                <param name="alert">${alert}</param>
+            </result>
+            <result name="error" >/error.jsp</result>
+            <result name="duplicate">/folAdmin/insert_userPage.jsp</result>
+        </action>
+        <action name="InsertMissionAction" class="thucnh.beans.InsertMissionAction">
+            <result name="admin" type="redirectAction">
+                <param name="actionName" >LoadDataAction</param>
+                <param name="key">mission</param>
+                <param name="alert">${alert}</param>
+            </result>
+            <result name="error" >/error.jsp</result>
+            <result name="duplicate">/folAdmin/insert_missionPage.jsp</result>
+        </action>
+        <action name="DeleteAction" class="thucnh.beans.DeleteAction">
+            <result name="admin" type="redirectAction">
+                <param name="actionName" >LoadDataAction</param>
+                <param name="searchValue">${searchValue}</param>
+                <param name="key">${key}</param>
+                <param name="alert">${alert}</param>
+            </result>
+            <result name="error" >/error.jsp</result>
+        </action>
+        <action name="SearchAction" class="thucnh.beans.SearchAction">
+            <result name="admin">/folAdmin/AdminPage.jsp</result>
+            <result name="armorUser">/folArmor/ArmorPage.jsp</result>
+            <result name="user">/folUser/UserPage.jsp</result>
+            <result name="null" type="redirectAction" >
+                <param name="actionName">LoadDataAction</param>
+                <param name="key">${key}</param>
+            </result>
+        </action>
+        <action name="RequestUseArmorAction" class="thucnh.beans.RequestUseArmorAction">
+            <result name="error" >/error.jsp</result>
+            <result name="armorUser" type="redirectAction">
+                <param name="actionName" >LoadDataAction</param>
+                <param name="key">armorUser</param>
+                <param name="alert">${alert}</param>
+            </result>
+        </action>
+        <action name="ArmorUseUpdateAction" class="thucnh.beans.ArmorUseUpdateAction">
+            <result name="error" >/error.jsp</result>
+            <result name="admin" type="redirectAction">
+                <param name="actionName" >LoadDataAction</param>
+                <param name="key">requestArmor</param>
+                <param name="alert">${alert}</param>
+            </result>
+            <result name="user" type="redirectAction">
+                <param name="actionName" >LoginAction</param>
+                <param name="alert">${alert}</param>
+            </result>
+        </action>
+        <action name="InsertArmorSupportedAction" class ="thucnh.beans.InsertArmorSupportedAction" >
+            <result name="error" >error.jsp</result>
+            <result name="admin" type="redirectAction">
+                <param name="actionName" >LoadDataAction</param>
+                <param name="key">${key}</param>
+                <param name="alert">${alert}</param>
+            </result>
+        </action>
+        <action name="UpdateArmorSupportedAction" class ="thucnh.beans.UpdateArmorSupportedAction" >
+            <result name="admin" type="redirectAction">
+                <param name="actionName" >LoadDataAction</param>
+                <param name="key">${key}</param>
+                <param name="alert">${alert}</param>
+            </result>
+            <result name="error" >/error.jsp</result>
+        </action>
+    </package>
+</struts>

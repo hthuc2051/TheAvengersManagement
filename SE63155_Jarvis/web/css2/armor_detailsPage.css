@@ -1,0 +1,373 @@
+body{
+    margin: 0px;
+    background-image: url(../images/New-York-Wallpaper-Background-7.jpg);
+    background-size: cover;
+    font-family: machineFont;
+}
+input:focus{
+    outline-width: 0;
+}
+textarea:focus{
+    outline-width: 0;
+}
+@font-face {
+    font-family: machineFont;
+    src: url(../font/Maximize.otf);
+}
+
+.miniform-submit{
+    margin-top: 15px;
+    width: 70px;
+    height: 20px;
+    font-size: 10px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.14);
+    font-family: machineFont;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    float: right;
+    margin-right: 30px;
+    text-decoration: none;
+    padding-top: 3px;
+    box-sizing:  border-box;
+}
+.miniform-submit:hover{
+    background: #CCCCCC;
+    color: black
+}
+#new-materials{
+    text-decoration: none;
+    text-align: center;
+    padding-top: 4px;
+    box-sizing: border-box;
+    margin-top: 17px;	
+}
+
+.materials-mission{
+    color: white;
+    text-align: left;
+}
+.materials-mission input{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    position: relative;
+    bottom: -2px;
+}
+
+
+#new-weapons{
+    text-decoration: none;
+    text-align: center;
+    padding-top: 4px;
+    box-sizing: border-box;
+    margin-top: 17px;	
+}
+.overlay {
+    height: 25%;
+    width: 27%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 58%;
+    right: -1%;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    z-index: 999;
+}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+.overlay span{
+    color: white;
+}
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+
+}
+
+.checkbox-list::-webkit-scrollbar {
+    width: 1px;	
+    height: 0px;
+}
+.checkbox-list::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid white;
+}
+.checkbox-list{
+    width: 350px;
+    height: 100px;
+    background: none;
+    margin-top: -20px;
+    color: white;
+    font-family: machineFont;
+    font-size: 15px;
+    overflow: scroll;
+    margin-bottom: -10px;
+    text-align: left;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+.checkbox-list input{
+    margin-left: 15px;
+}
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.but{
+    position: absolute;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.14);
+    font-family: machineFont;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    left: 925px;
+    bottom: 103px;
+    padding: 2px 13px 2px 13px;
+}
+
+.but:hover{
+    background: #CCCCCC;
+    color: black
+}
+
+
+#form-armor{
+    color: white;
+    width: 100%;
+    height: 635px;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-left: 520px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.85);
+    margin-bottom: -50px;
+}
+#armor-img{
+    width: 300px;
+    height: 270px;
+    margin-top: 100px;
+    margin-left: 95px;
+    border: 2px solid white;
+    position: absolute;
+    box-shadow: 0 0px 2px 0px #CAFF70;
+}
+.form-attribute{
+    width: 500px;
+    height: 25px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 10px;
+    padding-left: 10px;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+}
+
+.description::-webkit-scrollbar {
+    width: 2px;	
+    height: 0px;
+}
+.description::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid white;
+}
+.description{
+    width: 640px;
+    height: 70px;
+    background: none;
+    color: white;
+    font-family: machineFont;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    overflow: scroll;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.email{
+    width: 400px;
+    height: 25px;
+    margin-left: 10px;
+}
+.form-title{
+    width: 500px;
+    height: 25px;
+    font-size: 40px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: white;
+    position: absolute;
+    top: -25px;
+    padding-left: 30px;
+}
+
+.form-list{
+    width:290px;
+    height: 16px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: #F5F5F5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 5px;
+    padding-left: 5px;
+    transition: all 0.5s;
+    padding-bottom: 5px;
+
+}
+
+#material-list::-webkit-scrollbar {
+    width: 2px;	
+    height: 0px;
+}
+#material-list::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid white;
+}
+#material-list{
+    width: 400px;
+    height: 70px;
+    background: none;
+    color: white;
+    font-family: machineFont;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    overflow: scroll;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 5px;
+}
+#material-list input{
+    margin-left: 15px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+#material-list label{
+    position: relative;
+    margin-left: 35px;
+    top:-10px;
+}
+#weapons-list::-webkit-scrollbar {
+    width: 2px;	
+    height: 0px;
+}
+#weapons-list::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid white;
+}
+#weapons-list{
+    width: 400px;
+    height: 100px;
+    background: none;
+    color: white;
+    font-family: machineFont;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    overflow: scroll;
+    margin-bottom: -10px;
+    text-align: left;
+    margin-top: 5px;
+}
+#weapons-list input{
+    margin-left: 15px;
+}
+.file {
+    margin-top: -160px;
+    margin-left: -360px;
+    margin-bottom: 120px;
+    position: relative;
+}
+.file label {
+    background: rgba(255, 255, 255, 0.14);
+    padding: 5px 20px;
+    color: white;
+    font-size: 16px;
+    transition: all .4s;
+}
+.file input {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    opacity: 0.01;
+
+}
+.file input:hover + label,
+.file input:focus + label {
+    background: #CCCCCC;
+    color: black;
+}
+.form-submit{
+    margin-left: 200px;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.14);
+    font-family: machineFont;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    margin-top: 30px;
+}
+input:focus{
+    border-bottom: 1px solid white;
+}
+.form-submit:hover{
+    background: #CCCCCC;
+    color: black
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #DCDCDC;
+    font-size: 15px;
+}
+#line1{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    position: absolute;
+    top: 30px;
+    color: rgba(0,0,0,0.85);
+}.error{
+    color: #FFFF66;
+}
+#file-error{
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}

@@ -1,0 +1,247 @@
+body{
+	margin: 0px;
+	background-image: url(../images/architecture-buildings-city-92225.jpg);
+	background-size: cover;
+	font-family: machineFont;
+}
+body::-webkit-scrollbar { 
+    display: none;  
+}
+.form-armor::-webkit-scrollbar { 
+    display: none;  
+}
+input:focus{
+	outline-width: 0;
+}
+textarea:focus{
+	outline-width: 0;
+}
+@font-face {
+    font-family: machineFont;
+    src: url(../font/Maximize.otf);
+}
+#message-status{
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,1.00);
+    z-index: 100;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    box-sizing: border-box;
+
+}
+.close{
+    float: right;
+    color: white;
+    margin-right: 10px;
+    font-size: 40px;
+    background:none;
+    width: 30px;
+    height: 28px;
+    margin-top: -15px;
+    border: none;
+    cursor: pointer;
+}
+#form{
+	color: white;
+	width: 100%;
+	height: 635px;
+	box-sizing: border-box;
+	font-size: 20px;
+	background-color: rgba(0,0,0,0.85);
+	overflow: hidden;
+}
+.form-armor{
+/*	background: rgba(255, 255, 255, 0.14);*/
+	border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+	border-top: 1px solid rgba(255, 255, 255, 0.14);
+	padding-left: 100px;
+	overflow: scroll;
+	width: 100%;
+	height: 72%;
+	padding-top: 10px;
+}
+.form-attribute{
+	width: 500px;
+	height: 25px;
+	margin-top: 15px;
+	font-size: 18px;
+	font-family: machineFont;
+	background-color: rgba(0,0,0,0.0);
+	border: none;
+	color: white;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+	margin-left: 10px;
+	padding-left: 10px;
+	transition: all 0.5s;
+	margin-bottom: 5px;
+}
+
+.form-Username{
+	width:240px;
+	height: 16px;
+	margin-top: 35px;
+	font-size: 18px;
+	font-family: machineFont;
+	background-color: rgba(0,0,0,0.0);
+	border: none;
+	color: #F5F5F5;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+	margin-left: 5px;
+	padding-left: 5px;
+	transition: all 0.5s;
+	padding-bottom: 5px;
+}
+.form-title{
+	width: 40%;
+	height: 25px;
+	font-size: 40px;
+	font-family: machineFont;
+	background-color: rgba(0,0,0,0.0);
+	border: none;
+	color: white;
+	position: relative;
+	margin-left: 30px;
+	margin-top: -20px;
+}
+
+.form-list{
+	width:150px;
+	height: 16px;
+	font-size: 18px;
+	font-family: machineFont;
+	background-color: rgba(0,0,0,0.0);
+	border: none;
+	color: #F5F5F5;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+	margin-left: 5px;
+	padding-left: 5px;
+	transition: all 0.5s;
+	padding-bottom: 5px;
+	margin-top: 20px;
+}
+.form-submit{
+	margin-left: 620px;
+	width: 120px;
+	height: 30px;
+	font-size: 15px;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.14);
+	font-family: machineFont;
+	cursor: pointer;
+	border: none;
+	transition: all 0.3s;
+	position: relative;
+	bottom: 5px;
+}
+input:focus{
+	border-bottom: 1px solid white;
+}
+.form-submit:hover{
+	background: #CCCCCC;
+  	color: black
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  	color: #DCDCDC;
+	font-size: 15px;
+}
+#line{
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	transform:skewY(115deg);
+	z-index: 999;
+	left: 450px;
+	position: relative;
+}
+.logo{
+	top: 330px;
+	right: 50px;
+	font-size: 60px;
+	position: absolute;
+}
+.fullName{
+	top: 395px;
+	right: 85px;
+	position: absolute;
+	text-align: center;
+}
+.description::-webkit-scrollbar {
+    width: 2px;	
+	height: 0px;
+}
+.description::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid white;
+}
+.description{
+	width: 640px;
+	height: 70px;
+	background: none;
+	color: white;
+	font-family: machineFont;
+	font-size: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	overflow: scroll;
+	margin-bottom: 0px;
+	position: relative;
+	text-align: left;
+	margin-top: 5px;
+}
+
+#material-list::-webkit-scrollbar {
+    width: 2px;	
+	height: 0px;
+}
+#material-list::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid white;
+}
+#material-list{
+	width: 400px;
+	height: 70px;
+	background: none;
+	color: white;
+	font-family: machineFont;
+	font-size: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	overflow: scroll;
+	margin-bottom: -10px;
+	text-align: left;
+	margin-top: 5px;
+}
+#material-list input{
+	margin-left: 15px;
+}
+
+
+#weapons-list::-webkit-scrollbar {
+    width: 2px;	
+	height: 0px;
+}
+#weapons-list::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid white;
+}
+#weapons-list{
+	width: 400px;
+	height: 80px;
+	background: none;
+	color: white;
+	font-family: machineFont;
+	font-size: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	overflow: scroll;
+	margin-bottom: -10px;
+	text-align: left;
+	margin-top: 5px;
+}
+#weapons-list input{
+	margin-left: 15px;
+}
+.error{
+    color: #FFFF66;
+}

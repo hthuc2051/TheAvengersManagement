@@ -1,0 +1,242 @@
+body{
+    margin: 0px;
+    background-image: url(../images/New-York-Wallpaper-Background-7.jpg);
+    background-size: cover;
+    font-family: machineFont;
+}
+body::-webkit-scrollbar { 
+    display: none;  
+}
+input:focus{
+    outline-width: 0;
+}
+@font-face {
+    font-family: machineFont;
+    src: url(../font/Maximize.otf);
+}
+#form{
+    color: white;
+    width: 100%;
+    height: 635px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-left: 440px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.85);
+    overflow: hidden;
+    display: block;
+}
+
+#user-img{
+    width: 200px; height: 300px;
+    background-size: cover;
+    margin-left: 150px;
+    margin-top: 100px;
+    border: 7px solid rgba(255, 255, 255, 0.14);
+    opacity: 0.9;
+    position: absolute;
+}
+.form-attribute{
+    width: 500px;
+    height: 25px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 10px;
+    padding-left: 10px;
+    transition: all 0.5s;
+}
+.tdLabel {
+    top:20px;
+    position: relative;
+    color: white;
+    box-sizing: border-box;
+}
+.form-attribute tr{
+    border: 1px solid red;
+}
+.email{
+    width: 550px;
+    height: 25px;
+    margin-left: 5px;
+}
+.form-role{
+    width: 245px;
+    height: 25px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 10px;
+    padding-left: 10px;
+    transition: all 0.5s;
+}
+.form-name{
+    width:190px;
+    height: 16px;
+    margin-top: 35px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: #F5F5F5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 5px;
+    padding-left: 5px;
+    transition: all 0.5s;
+    padding-bottom: 5px;
+}
+.form-title{
+    width: 500px;
+    height: 25px;
+    font-size: 40px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: white;
+    position: absolute;
+    top: 0px;
+}
+
+.form-list{
+    width:150px;
+    height: 16px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: #F5F5F5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 5px;
+    padding-left: 5px;
+    transition: all 0.5s;
+    padding-bottom: 5px;
+}
+
+
+.file {
+    position: absolute;
+    left: 160px;
+    bottom: 155px;
+    width: 300px;
+}
+.file label {
+    background: rgba(255, 255, 255, 0.14);
+    padding: 5px 20px;
+    color: white;
+    font-size: 16px;
+    transition: all .4s;
+}
+.file input {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    opacity: 0.01;
+
+}
+.file input:hover + label,
+.file input:focus + label {
+    background: #CCCCCC;
+    color: black;
+}
+.form-attribute:nth-child(5){
+    width: 495px;
+}
+.role{
+    width: 565px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 10px;
+    padding-left: 10px;
+    transition: all 0.5s;
+}
+.email{
+    width: 560px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 10px;
+    padding-left: 10px;
+    transition: all 0.5s;
+    display: inline;
+}
+.form-submit{
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.14);
+    font-family: machineFont;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    margin-top: 50px;
+    margin-bottom: 2px;
+    position: relative;
+    left: 300px;
+}
+#form-profile_email-error{
+    display: block;
+}
+input:focus{
+    border-bottom: 1px solid white;
+}
+.form-submit:hover{
+
+    background: #CCCCCC;
+    color: black
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #DCDCDC;
+    font-size: 15px;
+}
+.form-profile{
+    padding-top: 20px;
+    padding-left: 15px;
+    /*    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+        border-top: 1px solid rgba(255, 255, 255, 0.14);*/
+}
+.form-profile table{
+    width: 700px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+#line1{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    position: relative;
+    transform: skewY(150deg);
+    margin-left: -1600px;
+}
+#line2{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    position: relative;
+    transform: skewY(150deg);
+    margin-right: -300px;
+}
+.error{
+    color: #FFFF66;
+}
+#file-error{
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: -40px;
+}

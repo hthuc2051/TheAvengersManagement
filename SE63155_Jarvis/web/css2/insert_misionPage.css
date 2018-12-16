@@ -1,0 +1,374 @@
+body{
+    margin: 0px;
+    background-image: url(../images/architecture-buildings-city-92225.jpg);
+    background-size: cover;
+    font-family: machineFont;
+}
+body::-webkit-scrollbar { 
+    display: none;  
+}
+.form-mission::-webkit-scrollbar { 
+    display: none;  
+}
+input:focus{
+    outline-width: 0;
+}
+@font-face {
+    font-family: machineFont;
+    src: url(../font/Maximize.otf);
+}
+#message-status{
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 15px;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,1.00);
+    z-index: 100;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.close{
+    float: right;
+    color: white;
+    margin-right: 10px;
+    font-size: 40px;
+    background:none;
+    width: 30px;
+    height: 28px;
+    margin-top: -15px;
+    border: none;
+    cursor: pointer;
+}
+#dateStatus{
+    display: none;
+    color: white;
+    position: relative;
+    margin-left: 760px;
+    margin-top: -345px;
+    color: #FFFF66;
+}
+#form{
+    color: white;
+    width: 100%;
+    height: 635px;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.85);
+    overflow: hidden;
+}
+.form-mission{
+    /*	background: rgba(255, 255, 255, 0.14);*/
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    padding-left: 100px;
+    overflow: scroll;
+    width: 100%;
+    height: 82%;
+}
+.form-attribute{
+    width: 600px;
+    height: 25px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 10px;
+    padding-left: 10px;
+    transition: all 0.5s;
+}
+.date{
+    width:225px;
+    height: 16px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: #F5F5F5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    transition: all 0.5s;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-clear-button {
+  display:none;
+}
+
+input::-webkit-calendar-picker-indicator {
+  color: white;
+  opacity: 1;
+	transition: all 0.5s;
+}
+.email{
+    width: 600px;
+    height: 25px;
+    margin-left: 54px;
+}
+.form-Username{
+    width:240px;
+    height: 16px;
+    margin-top: 35px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: #F5F5F5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 5px;
+    padding-left: 5px;
+    transition: all 0.5s;
+    padding-bottom: 5px;
+}
+.form-title{
+    width: 40%;
+    height: 25px;
+    font-size: 40px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: white;
+    position: relative;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+.form-list{
+    width:150px;
+    height: 16px;
+    font-size: 18px;
+    font-family: machineFont;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    color: #F5F5F5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    margin-left: 5px;
+    padding-left: 5px;
+    transition: all 0.5s;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+.file {
+    position: relative;
+    margin-top: -190px;
+    margin-left: 235px;
+}
+.file label {
+    background: rgba(255, 255, 255, 0.14);
+    padding: 5px 20px;
+    color: white;
+    font-size: 16px;
+    transition: all .4s;
+}
+.file input {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    opacity: 0.01;
+
+}
+.file input:hover + label,
+.file input:focus + label {
+    background: #CCCCCC;
+    color: black;
+}
+.form-submit{
+    margin-left: 620px;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.14);
+    font-family: machineFont;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+input:focus{
+    border-bottom: 1px solid white;
+}
+.form-submit:hover{
+    background: #CCCCCC;
+    color: black
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #DCDCDC;
+    font-size: 15px;
+}
+#line{
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    transform:skewY(115deg);
+    z-index: 999;
+    left: 470px;
+    position: relative;
+}
+.logo{
+    top: 330px;
+    right: 40px;
+    font-size: 60px;
+    position: absolute;
+}
+.fullName{
+    top: 395px;
+    right: 62px;
+    position: absolute;
+    text-align: center;
+}
+.description::-webkit-scrollbar {
+    width: 2px;	
+    height: 0px;
+}
+.description::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid white;
+}
+.description{
+    width: 650px;
+    height: 70px;
+    background: none;
+    color: white;
+    font-family: machineFont;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    overflow: scroll;
+    margin-bottom: 0px;
+    position: relative;
+    text-align: left;
+}
+
+#user_list::-webkit-scrollbar {
+    width: 2px;	
+    height: 0px;
+}
+#user_list::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid white;
+}
+#user_list{
+    width: 400px;
+    height: 100px;
+    background: none;
+    color: white;
+    font-family: machineFont;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    overflow: scroll;
+    margin-bottom: -20px;
+    text-align: left;
+    position: relative;
+    padding-top: -10px;
+}
+#user_list input{
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.overlay {
+    height: 25%;
+    width: 27%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 63%;
+    right: 18%;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    z-index: 999;
+}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+.overlay span{
+    color: white;
+}
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+
+}
+
+.checkbox-list::-webkit-scrollbar {
+    width: 1px;	
+    height: 0px;
+}
+.checkbox-list::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid white;
+}
+.checkbox-list{
+    width: 350px;
+    height: 100px;
+    background: none;
+    margin-top: -20px;
+    color: white;
+    font-family: machineFont;
+    font-size: 15px;
+    overflow: scroll;
+    margin-bottom: -10px;
+    text-align: left;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+.checkbox-list input{
+    margin-left: 15px;
+}
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.but{
+    position: absolute;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.14);
+    font-family: machineFont;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    padding: 2px 13px 2px 13px;
+    left: 510px;
+    bottom: 60px;
+}
+
+.but:hover{
+    background: #CCCCCC;
+    color: black
+}
+.but:first-child{
+    margin-right: 20px;
+}.error{
+    color: #FFFF66;
+}
