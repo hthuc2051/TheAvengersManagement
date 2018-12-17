@@ -13,9 +13,9 @@ Using Java, Struts 2 framework, jQuery, HTML, CSS, Javascript, SQL Server,...\
 
 
 Using:\
-Clone project with https://github.com/hthuc2051/TheAvengersManagement.git\
-Open SQL Server and create new Database: fu_Avengers
-Run script file: fu_Avengers_thucnhse63155.sql with SQL Server 
-Execute the script file
-Open NetBeans and add related libraries
-Run project
+Clone project with https://github.com/hthuc2051/TheAvengersManagement.git
+Open SQL Server and create new Database: fu_Avengers \
+Run script file: fu_Avengers_thucnhse63155.sql with SQL Server  \
+Execute the script file \
+Open NetBeans and add related libraries \
+Run project \
